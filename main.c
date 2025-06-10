@@ -7,7 +7,7 @@ int main(){
     int numbers[100];
     srand(time(NULL));
     for (int i=0;i<100;i++){
-        int num = (rand()^rand())%100;
+        int num = rand()%100;
         numbers[i] = num;
     }
     for (int i=0;i<100;i++){
@@ -24,7 +24,7 @@ int main(){
             break;
         }
     }
-    for (int i=99;i>0;i--){
+    for (int i=99;i>=0;i--){
         printf("%d\n",numbers[i]);
     }
     return 0;
